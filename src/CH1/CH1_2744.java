@@ -13,6 +13,7 @@ class CH1_2744 {
         StringBuilder ans = new StringBuilder();
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
+//            ans.append(Character.toUpperCase(ch) == ch ? Character.toLowerCase(ch) : Character.toUpperCase(ch));
             ans.append( 'A' <= ch && ch <= 'Z' ? (char) ('a' + ch - 'A') : (char) ('A' + ch - 'a'));
         }
         return ans.toString();
